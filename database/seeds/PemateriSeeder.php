@@ -13,7 +13,7 @@ class PemateriSeeder extends Seeder
     public function run()
     {
         for ($i=1;$i<=10;$i++) {
-        	Pemateri::create(['nama'=>'Nama '.$i,'username'=>'Username '.$i,'password'=>'Password'.$i,'email'=>'email'.$i.'@gmail.com']);
+        	Pemateri::create(['nama'=>'Nama '.$i,'username'=>'Username'.$i,'password'=>'Password'.$i,'email'=>'email'.$i.'@gmail.com']);
         }
     }
 }
