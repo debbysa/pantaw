@@ -20,6 +20,7 @@ class CreatePesertaTable extends Migration
             $table->string('username',32);
             $table->string('password',32);
             $table->string('email',50);
+            $table->foreign('id_status')->references('id_status')->on('status')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
